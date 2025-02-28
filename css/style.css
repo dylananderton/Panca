@@ -395,6 +395,65 @@ footer .bg-3 { background: #f1cd69; position: relative; text-transform: uppercas
 .product-div{height: 150px;}
 .product-link, .product {height: 100%;}
 
+/*Contact*/
+.address dd {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 0;
+}
+
+.address span {
+    width: 90px;
+    flex-shrink: 0;
+    font-weight: 600;
+}
+
+.address a {
+    word-break: break-word;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.address a:hover {
+    text-decoration: underline;
+}
+
+/* Adjust for tablets and medium screens */
+@media (max-width: 995px) {
+    .address dd {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .address span {
+        width: auto;
+        font-weight: bold;
+    }
+
+    .address a {
+        font-size: 16px;
+    }
+}
+
+/* Adjust for small screens (mobile) */
+@media (max-width: 480px) {
+    .address dd {
+        padding: 8px 0;
+    }
+
+    .address span {
+        font-size: 14px;
+    }
+
+    .address a {
+        font-size: 15px;
+    }
+}
+
+
+
 
 
 /*touch-touch*/ 
@@ -465,6 +524,7 @@ footer .bg-3 { background: #f1cd69; position: relative; text-transform: uppercas
 	.content { margin-top: -2px;}
 }
 @media only screen and (max-width: 767px) {
+	.text-2 {line-height: 1.2em;}
 	.text-3 { font-size: 100px;}
 	.text-4 { font-size: 70px;}
 	.camera_wrap { height: 227px;}
