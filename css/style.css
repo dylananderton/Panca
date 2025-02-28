@@ -200,7 +200,7 @@ h1 { float: left; margin-top: 49px;}
 .block-1 { color: #fff; text-transform: uppercase; font-weight: bold;}
 
 
-.box-1 { padding-top: 138px; padding-bottom: 138px; text-align: center;}
+.box-1 { padding-top: 138px; text-align: center;}
 .box-1 h2 { padding-top: 0; padding-bottom: 0;}
 .symb { text-align: center; font-size: 70px; line-height: 1em; color: #f1cd69; margin-top: 58px; margin-bottom: 10px;}
 
@@ -510,6 +510,9 @@ footer .bg-3 { background: #f1cd69; position: relative; text-transform: uppercas
 
 /*==================================RESPONSIVE LAYOUTS===============================================*/
 
+@media only screen and (min-width: 767px) {
+	.box-1 {padding-bottom: 138px;}
+}
 
 @media only screen and (max-width: 995px) {
 	.text-3 { font-size: 200px; letter-spacing: 0; margin-top: 0; margin-left: 0;}
@@ -537,6 +540,7 @@ footer .bg-3 { background: #f1cd69; position: relative; text-transform: uppercas
 	.logos a { height: 72px;}
 	.gallery > div { width: 46% !important; margin-left: 2%; margin-right: 2%;}
 	.about-panca-img-div { height: 300px; }
+	.box-1:last-child {padding-bottom: 138px;}
 }
 @media only screen and (max-width: 479px) {
 	.camera_wrap { height: 200px;}
