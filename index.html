@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name = "format-detection" content = "telephone=no" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/superfish.css">
+    <link rel="stylesheet" href="font/font-awesome.css" type="text/css" media="screen">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/camera.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <!--<![endif]-->
+     
+     <script>
+        $(document).ready(function() {
+            
+            jQuery('#camera_wrap_1').camera({
+                height: '30.55%',
+                playPause: false,
+                time: 8000,
+                transPeriod: 1000,
+                fx: 'stampede',
+                loader: 'none',
+                minHeight:'200px',
+                navigation: false,
+                pagination: true,
+            });
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script src="js/html5shiv.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+     </head>
+     <body>
+<!--==============================header=================================-->
+<header>
+    <div class="container_12">
+        <div class="logo-nav-div grid_12">
+            <!-- <h1><a href="index.html"><img src="images/Panca-logo.png" alt="mining"></a> </h1> -->
+            <div class="logo-div"><a href="index.html"><img src="images/Panca-logo.png" alt="mining" class="logo"></a> </div>
+            <nav>
+                <ul class="sf-menu">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!--=======content================================-->
+<section class="content">
+    <div class="slider">
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-src="images/slide-1.jpg">
+            </div>
+            <div data-src="images/slide-2.jpg">
+            </div>
+            <div data-src="images/slide-3.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="bg-1">
+        <div class="container_12">
+            <div class="row">
+                <div class="grid_12 block-1">
+                    <div class="text-2">Supplier & Distributor</div>
+                    <div class="text-3">alat berat</div>
+                    <div class="text-4">terpercaya sejak 2008</div>
+                    <div class="clearfix">
+                        <a href="contact.html"" class="btn-1">Contact us!</a>
+                        <!-- <a href="#" class="btn-2">Contact us!</a> -->
+                    </div>
+                    <!-- <div class="text-2">The largest independent</div>
+                    <div class="text-3">mining</div>
+                    <div class="text-4">company</div>
+                    <div class="clearfix">
+                        <a href="#" class="btn-1">what we do?</a>
+                        <a href="#" class="btn-2">join us!</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_12">
+        <div class="row">
+            <div class="grid_4 box-1">
+                <h2>about</h2>
+                <div class="bord-1">
+                    <p class="symb"><i class="icon-building"></i></p>
+                    <p class="text-1">About us</p>
+                    <div>We are a trusted supplier and distributor since 2008, specializing in spare parts for heavy equipment, trucks, forklifts, and technical tools. We are committed to delivering reliable products and outstanding service.</div>
+                </div>
+                <a href="about.html" class="link">more</a>
+            </div>
+            <div class="grid_4 box-1">
+                <h2>brands</h2>
+                <div class="bord-1">
+                    <p class="symb"><i class="icon-tags"></i></p>
+                    <p class="text-1">Our Brands</p>
+                    <div>We partner with leading global brands to offer top-quality spare parts and equipment. Our selection includes trusted names across the mining, agriculture, construction, and logistics industries.</div>
+                </div>
+                <a href="brands.html" class="link">more</a>
+            </div>
+            <div class="grid_4 box-1">
+                <h2>products</h2>
+                <div class="bord-1">
+                    <p class="symb"><i class="icon-cogs"></i></p>
+                    <p class="text-1">Our Products</p>
+                    <div>We supply a wide range of premium spare parts and accessories. From engine components to hydraulic systems, our durable solutions meet the needs of various industries and applications.</div>
+                </div>
+                <a href="products.html" class="link">more</a>
+            </div>
+        </div>
+    </div>
+       
+</section>
+<!--=======footer=================================-->
+<footer>
+    <div class="bg-3">
+        <div class="container_12">
+            <div class="row">
+                <div class="f-phone">+62 878 9090 9788</div>
+                <div class="f-logo"><a href="#"><img class="f-panca-logo" src="images/Panca-logo.png" alt="mining"></a></div>
+                <div class="copyright">Panca Diesel &copy; 2013</div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
