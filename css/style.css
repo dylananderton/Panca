@@ -13,14 +13,16 @@ html, body {
 
 * { -webkit-text-size-adjust: none;}
 
-.bg-1 { background: #f1cd69; padding-top: 114px; padding-bottom: 109px;}
+/* .bg-1 { background: #f1cd69; padding-top: 114px; padding-bottom: 109px;} */
+.bg-1 { background: #0176dc; padding-top: 114px; padding-bottom: 109px;}
 .bg-2 { background: #312934; margin-top: 117px; padding-top: 3px;}
 
 a { color: inherit; text-decoration: none;}
 a:hover { text-decoration: none;}
 a[href^="tel:"] {color: inherit;text-decoration:none;}
 .a-hov { transition: all 0.4s ease;}
-.a-hov:hover { color: #f1cd69;}
+/* .a-hov:hover { color: #f1cd69;} */
+.a-hov:hover { color: #0176dc;}
 
 ul li a { transition: all 0.4s ease;}
 
@@ -38,7 +40,8 @@ h3 { font-size: 22px; line-height: 24px; color: #c2bcc5;}
 
 .color-1 { color: #aea8b1;}
 .color-2 { color: #c2bcc5;}
-.color-3 { color: #f1cd69 !important;}
+.color-3 { color: #0176dc !important;}
+/* .color-3 { color: #f1cd69 !important;} */
 
 h2.first { padding-top: 78px;}
 h2.v1 { padding-top: 108px;}
@@ -64,7 +67,8 @@ h2.v1 { padding-top: 108px;}
 .btn-2:hover { background: #ddbc64; }
 
 .link { transition: all 0.4s ease; display: inline-block; font-weight: bold; text-transform: uppercase; font-size: 20px; line-height: 22px; color: #fff; padding-top: 39px;}
-.link:hover { color: #f1cd69;}
+/* .link:hover { color: #f1cd69;} */
+.link:hover { color: #0176dc;}
 
 
 /*lists */
@@ -97,7 +101,8 @@ h2.v1 { padding-top: 108px;}
 	display: block;
 	width: 60px;
 	height: 60px;
-	background: #f1cd69;
+	/* background: #f1cd69; */
+	background: #0176dc;
 	color: #2a232d;
 	font-size: 36px;
 	line-height: 60px;
@@ -157,7 +162,10 @@ h1 { float: left; margin-top: 49px;}
 
 /************Content***********/
 .content { background: #2a232d;}
-.camera_wrap { padding-bottom: 28px; background: #f8e6b4 url(../images/bg-2.gif) 0 bottom repeat-x; height: 487px; margin-bottom: 0 !important;}
+.camera_wrap { padding-bottom: 28px; 
+	/* background: #f8e6b4 url(../images/bg-2.gif) 0 bottom repeat-x;  */
+	background: #a3d4ff url(../images/blue_bg-2.gif) 0 bottom repeat-x;
+	height: 487px; margin-bottom: 0 !important;}
 .camera_wrap .camera_pag .camera_pag_ul { 
 	position: absolute;
 	display: inline-block; 
@@ -188,7 +196,8 @@ h1 { float: left; margin-top: 49px;}
 	position: absolute;
 	top: 0px !important;
 	width: 152px !important;
-	background: #f4d787;
+	/* background: #f4d787; */
+	background: #78baf4;
 	border-radius: 0px;
 }
 .camera_wrap .camera_pag .camera_pag_ul li > span:hover,
@@ -202,7 +211,8 @@ h1 { float: left; margin-top: 49px;}
 
 .box-1 { padding-top: 138px; text-align: center;}
 .box-1 h2 { padding-top: 0; padding-bottom: 0;}
-.symb { text-align: center; font-size: 70px; line-height: 1em; color: #f1cd69; margin-top: 58px; margin-bottom: 10px;}
+/* .symb { text-align: center; font-size: 70px; line-height: 1em; color: #f1cd69; margin-top: 58px; margin-bottom: 10px;} */
+.symb { text-align: center; font-size: 70px; line-height: 1em; color: #0176dc; margin-top: 58px; margin-bottom: 10px;}
 
 
 .block-2 {
@@ -275,7 +285,8 @@ h1 { float: left; margin-top: 49px;}
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .progress-bar {
-  background: #f1cd69;
+  /* background: #f1cd69; */
+  background: #0176dc;
   height: 7px;
   -webkit-border-top-right-radius: 50px;
   -moz-border-radius-topright: 50px;
@@ -341,7 +352,10 @@ h1 { float: left; margin-top: 49px;}
 /************Footer************/
 
 footer { text-align: center; color: #fff;}
-footer .bg-3 { background: #f1cd69; position: relative; text-transform: uppercase; font-weight: bold; padding-bottom: 87px;}
+footer .bg-3 { 
+	/* background: #f1cd69;  */
+	background: #0176dc; 
+	position: relative; text-transform: uppercase; font-weight: bold; padding-bottom: 87px;}
 /* footer .bg-3:after {
 	position: absolute;
 	content:"";
@@ -550,7 +564,8 @@ footer .bg-3 { background: #f1cd69; position: relative; text-transform: uppercas
 	.list-1 li { margin: 0 4px;}
 	.gallery > div { width: 100% !important; margin-left: 0; margin-right: 0;}
 	.logos a { display: none;}
-	footer { background: #f1cd69;}
+	/* footer { background: #f1cd69;} */
+	footer { background: #0176dc;}
 	footer .bg-3 { padding-bottom: 40px;}
 	.about-panca-img-div { height: 200px; }
 }

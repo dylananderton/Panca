@@ -36,18 +36,21 @@ nav {
 }
 	.sf-menu > li {
 	 transition: background-position 0.4s ease;
-    background: transparent url(../images/bg-1.gif) 0 -160px repeat-x;
+    /* background: transparent url(../images/bg-1.gif) 0 -160px repeat-x; */
+    background: transparent url(../images/blue_bg-1.gif) 0 -160px repeat-x;
 }
 
 	.sf-menu > li:hover, 
 	.sf-menu > li.current, 
 	.sf-menu > li.sfHover {
-		background: transparent url(../images/bg-1.gif) center 0 repeat-x;
+		/* background: transparent url(../images/bg-1.gif) center 0 repeat-x; */
+		background: transparent url(../images/blue_bg-1.gif) center 0 repeat-x;
 		 transition: background-position 0.4s ease;
 	}
 	.sf-menu > li:hover > a, 
 	.sf-menu > li.current > a, 
-	.sf-menu > li.sfHover > a { color: #f1cd69;}
+	/* .sf-menu > li.sfHover > a { color: #f1cd69;} */
+	.sf-menu > li.sfHover > a { color: #0176dc;}
 
 	.sf-menu > li > a > .sf-sub-indicator {
 		display: block;
@@ -65,7 +68,8 @@ nav {
 	}
 	.sf-menu > li:hover > a > span, 
 	.sf-menu > li.current > a > span,
-	.sf-menu > li.sfHover > a > span { color: #f1cd69; border-color: #f1cd69 transparent transparent transparent; bottom: 20px; }
+	/* .sf-menu > li.sfHover > a > span { color: #f1cd69; border-color: #f1cd69 transparent transparent transparent; bottom: 20px; } */
+	.sf-menu > li.sfHover > a > span { color: #0176dc; border-color: #0176dc transparent transparent transparent; bottom: 20px; }
 
 
 
@@ -149,7 +153,8 @@ nav {
 		font-size: 14px;
 		line-height: 20px;
 		color: #312934;
-		background-color: #f1cd69;
+		/* background-color: #f1cd69; */
+		background-color: #0176dc;
 		width:100%;
 	    outline: none;
 	    padding: 5px;
