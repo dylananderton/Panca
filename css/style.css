@@ -205,6 +205,74 @@ h1 { float: left; margin-top: 49px;}
 	background: #312934;
 }
 
+.camera_target {
+	opacity: 40%;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.camera_wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a slight dark overlay */
+    color: white;
+    z-index: 10; /* Ensures text is on top */
+}
+
+.text-content {
+    text-align: left;
+}
+
+.text-2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.text-3 {
+    font-size: 11rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text-4 {
+    font-size: 3rem;
+}
+
+.btn-1 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #0176dc;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-1:hover {
+    background: #005bb5;
+}
+
+
+
 
 .block-1 { color: #fff; text-transform: uppercase; font-weight: bold;}
 
@@ -524,13 +592,49 @@ footer .bg-3 {
 
 /*==================================RESPONSIVE LAYOUTS===============================================*/
 
+@media only screen and (max-width: 1500px) {
+	.text-content {
+		text-align: left;
+		margin-bottom: 2rem;
+	}
+	
+	.text-2 {
+		font-size: 2rem;
+		font-weight: bold;
+		line-height: 5rem;
+	}
+	
+	.text-3 {
+		font-size: 8rem;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	
+	.text-4 {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+	
+	.btn-1 {
+		display: inline-block;
+		margin-top: 20px;
+		padding: 0px 10px;
+		background: #0176dc;
+		color: white;
+		text-decoration: none;
+		font-size: 1.5rem;
+		border-radius: 8px;
+		transition: 0.3s;
+	}
+}
+
 @media only screen and (min-width: 767px) {
 	.box-1 {padding-bottom: 138px;}
 }
 
 @media only screen and (max-width: 995px) {
-	.text-3 { font-size: 200px; letter-spacing: 0; margin-top: 0; margin-left: 0;}
-	.text-4 { margin-top: 0;}
+	/* .text-3 { font-size: 200px; letter-spacing: 0; margin-top: 0; margin-left: 0;}
+	.text-4 { margin-top: 0;} */
 	.camera_wrap { height: 296px; margin-bottom: 0 !important;}
 	.camera_wrap .camera_pag { text-align: center; }
 	.camera_wrap .camera_pag .camera_pag_ul { display: inline-block; position: relative; left: auto; right: auto; margin-left: 0; margin-top: 14px;}
@@ -539,11 +643,50 @@ footer .bg-3 {
 	.w1 { width: 45%;  margin-bottom: 15px;}
 	h2 { font-size: 34px;}
 	.content { margin-top: -2px;}
+
+	.text-content {
+		text-align: left;
+		margin-bottom: 2rem;
+	}
+	
+	.text-2 {
+		font-size: 1.5rem;
+		font-weight: bold;
+		line-height: 4.5rem;
+	}
+	
+	.text-3 {
+		font-size: 7rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: -9px;
+	}
+	
+	.text-4 {
+		font-size: 1.5rem;
+		line-height: 3rem;
+	}
+	
+	.btn-1 {
+		line-height: 0;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		height: fit-content;
+		margin-top: 5px;
+		padding: 25px 10px;
+		background: #0176dc;
+		color: white;
+		text-decoration: none;
+		font-size: 1.5rem;
+		border-radius: 8px;
+		transition: 0.3s;
+	}
 }
 @media only screen and (max-width: 767px) {
-	.text-2 {line-height: 1.2em;}
+	/* .text-2 {line-height: 1.2em;}
 	.text-3 { font-size: 100px;}
-	.text-4 { font-size: 70px;}
+	.text-4 { font-size: 70px;} */
 	.camera_wrap { height: 227px;}
 	.camera_wrap .camera_pag .camera_pag_ul li > span { width: 97px !important;}
 	.camera_wrap .camera_pag .camera_pag_ul li { width: 97px !important;}
@@ -555,11 +698,51 @@ footer .bg-3 {
 	.gallery > div { width: 46% !important; margin-left: 2%; margin-right: 2%;}
 	.about-panca-img-div { height: 300px; }
 	.box-1:last-child {padding-bottom: 138px;}
+
+	.text-content {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+	
+	.text-2 {
+		font-size: 1.5rem;
+		font-weight: bold;
+		/* line-height: 4.5rem; */
+	}
+	
+	.text-3 {
+		font-size: 5rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: -7px;
+		line-height: 7rem;
+	}
+	
+	.text-4 {
+		font-size: 1.5rem;
+		/* line-height: 3rem; */
+	}
+	
+	.btn-1 {
+		line-height: 0;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		height: fit-content;
+		padding: 20px 0px;
+		background: #0176dc;
+		color: white;
+		text-decoration: none;
+		font-size: 1.1rem;
+		border-radius: 8px;
+		transition: 0.3s;
+		margin-top: 0;
+	}
 }
 @media only screen and (max-width: 479px) {
 	.camera_wrap { height: 200px;}
-	.text-3 { font-size: 85px; }
-	.text-4 { font-size: 45px;}
+	/* .text-3 { font-size: 85px; }
+	.text-4 { font-size: 45px;} */
 	.btn-1, .btn-2 { width: 149px;}
 	.list-1 li { margin: 0 4px;}
 	.gallery > div { width: 100% !important; margin-left: 0; margin-right: 0;}
@@ -568,6 +751,86 @@ footer .bg-3 {
 	footer { background: #0176dc;}
 	footer .bg-3 { padding-bottom: 40px;}
 	.about-panca-img-div { height: 200px; }
+
+	.text-content {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+	
+	.text-2 {
+		font-size: 1.2rem;
+		font-weight: bold;
+		/* line-height: 4.5rem; */
+	}
+	
+	.text-3 {
+		font-size: 4rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: -5px;
+		line-height: 6rem;
+	}
+	
+	.text-4 {
+		font-size: 1.2rem;
+		/* line-height: 3rem; */
+	}
+	
+	.btn-1 {
+		line-height: 0;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		height: fit-content;
+		padding: 20px 0px;
+		background: #0176dc;
+		color: white;
+		text-decoration: none;
+		font-size: 1.1rem;
+		border-radius: 8px;
+		transition: 0.3s;
+		margin-top: 0;
+	}
 }
 @media only screen and (max-width: 320px) {
+
+	.text-content {
+		text-align: left;
+		margin-bottom: 3rem;
+	}
+	
+	.text-2 {
+		font-size: 1.2rem;
+		font-weight: bold;
+		/* line-height: 4.7rem; */
+	}
+	
+	.text-3 {
+		font-size: 3rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: -3px;
+		line-height: 5rem;
+	}
+	
+	.text-4 {
+		font-size: 1.2rem;
+		/* line-height: 4rem; */
+	}
+	
+	.btn-1 {
+		line-height: 0;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		height: fit-content;
+		padding: 20px 0px;
+		background: #0176dc;
+		color: white;
+		text-decoration: none;
+		font-size: 1.1rem;
+		border-radius: 8px;
+		transition: 0.3s;
+		margin-top: 0;
+	}
 }
