@@ -47,6 +47,23 @@ h2.first { padding-top: 78px;}
 h2.v1 { padding-top: 108px;}
 .bord-1 { border-bottom: 1px solid #3b333e; padding-bottom: 40px;}
 
+.whatsapp-float {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #25D366;
+	color: white;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+	font-size: 30px;
+	z-index: 10000;
+}
 
 /*buttons*/
 
@@ -569,7 +586,7 @@ footer .bg-3 {
 
 /*toTop*/
 
-#toTop {
+/* #toTop {
 	display:none;
 	text-decoration:none;
 	position:fixed;
@@ -584,6 +601,23 @@ footer .bg-3 {
 	margin-right: -670px !important;
 	right: 50%;
 	bottom: 20px;
+} */
+
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	cursor: pointer;
+	overflow: hidden;
+	width: 36px;
+	height: 36px;
+	border: none;
+	text-indent: -999px;
+	z-index: 101; /* Ensure it is above the WhatsApp button */
+	background: url(../images/ui.totop.png) 0 0 no-repeat;
+	right: 20px !important; /* Align with WhatsApp button */
+	bottom: 90px; /* Place above WhatsApp button */
+	margin-right: 0.87rem !important;
 }
 
 	#toTop:hover { background: url(../images/ui.totop.png) 0 bottom no-repeat;}
@@ -833,4 +867,139 @@ footer .bg-3 {
 		transition: 0.3s;
 		margin-top: 0;
 	}
+}
+
+/*contacts*/
+
+.address { margin-top: 1px;}
+.address span {display: inline-block;width: 77px;} 
+.address dt { margin-bottom: 22px; /* font-size: 14px; */ font-weight: normal; /* font-weight: bold; */ color: #aea8b1;}
+	.address span.e-mail {width:auto;}
+	.address a {	text-decoration: none;	margin-left: 12px;}
+.map_wrapper {display: block;padding-bottom: 2px;}
+	.map_wrapper .img-bord-1 { margin-bottom: 24px;}
+
+#map_canvas {
+	width: 557px;
+	height: 375px;
+	margin-top: -2px;
+}
+#contact-form {
+	position: relative;
+	padding-bottom: 10px;
+	padding-top: 13px;
+}
+#contact-form .error, #contact-form .empty {
+	text-align: right;
+	color: red;
+	right: 4px;
+	top: -2px;
+	display: none;
+	overflow: hidden;
+	position: absolute;
+	font-size: 11px;
+}
+#contact-form .success {
+	width: 100%;
+	top: 0px;
+	left: 0;
+	z-index: 99;
+	text-align: center;
+	padding: 115px 0;
+	border: 1px solid #3a323d;
+	background: #312934;
+	color: #837a86;
+	font-size: 15px;
+	line-height: 20px;
+	font-family: 'PT Sans', sans-serif;
+	position: absolute;
+	display: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#contact-form label {
+	display: inline-block;
+	position: relative;
+	min-height: 70px;
+}
+#contact-form label:first-child + label { float: right;}
+#contact-form label.message {padding-bottom: 0;	width: 100%;/* min-height: 0px; */float: none;}
+#contact-form textarea {
+	overflow: auto;
+	width: 100%;
+	height: 247px;
+	resize: none;
+	margin: 0 0 0 0;
+}
+#contact-form label input,
+#contact-form label textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #3a323d;
+	background: #312934;
+	position: relative;
+	float: left;
+	color: #837a86;
+	font-size: 15px;
+	line-height: 20px;
+	font-family: 'PT Sans', sans-serif;
+	border-radius: 0px;
+}
+#contact-form label input {
+	height: 47px;
+	width: 460px;
+	box-shadow: none !important;
+	padding: 13px 7px 12px 17px;
+	outline: none;
+}
+#contact-form label textarea {
+	height: 189px;
+	overflow: auto;
+	width: 100%;;
+	padding: 13px 7px 12px 17px;
+	margin: 0px;
+	resize: none;
+}
+.form_buttons {	text-align: right;	padding-top: 36px;}
+.form_buttons a {display: inline;}
+.form_buttons a:first-child {margin-top: 24px;}
+
+
+
+@media only screen and (max-width: 1025px) {
+#contact-form label input {	width: 100%;}
+#contact-form label {display: block; width: 100%;}
+#contact-form label textarea {	width: 100%; float: none;}
+}
+@media only screen and (max-width: 995px) {
+
+#contact-form label {display: block; width: 100%;}
+#contact-form label input {	width: 100%;}
+#map_canvas {margin-bottom: 20px; width: 420px; height: 420px;}
+}
+@media only screen and (max-width: 767px) {
+.map_wrapper .img-ind { margin-right: 0; float: none;}
+#map_canvas {width: 100%; height: 300px;}
+
+
+}
+@media only screen and (max-width: 479px) {
+}
+@media only screen and (max-width: 320px) {
+}
+
+.separator {
+	width: 70%;
+	height: 1px;
+	background-color: #ddd;
+	margin: 20px auto;
+	opacity: 60%;
+	border-radius: 30px;
+	border: 0.1px solid white;
 }
